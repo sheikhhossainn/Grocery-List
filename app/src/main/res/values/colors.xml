@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grocery_list_color">#000000</color> <!-- Black color for light mode -->
+    <color name="purple_500">#6200EE</color>
+    <color name="black">#000000</color> <!-- Black color -->
+    <color name="red">#FF0000</color>
+</resources>

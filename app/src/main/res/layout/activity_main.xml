@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/groceryListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery List"
+        android:textSize="24sp"
+        android:textColor="@color/grocery_list_color"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Item Name Input with Border -->
+    <EditText
+        android:id="@+id/itemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Item"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edit_text_border"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="text" />
+
+    <!-- Item Cost Input with Border -->
+    <EditText
+        android:id="@+id/itemCostEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Cost (optional)"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edit_text_border"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/totalCostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost: 0 TAKA"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/finalizeListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalize List"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/saveListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save List"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/showHistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show History"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/clearHomeItemsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Home Screen Items"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/clearHistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Saved History"
+        android:layout_marginBottom="8dp" />
+
+    <!-- ScrollView to allow scrolling the history when it overflows -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/historyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:gravity="start"
+            android:maxHeight="300dp"
+            android:layout_gravity="center" />
+    </ScrollView>
+
+</LinearLayout>
