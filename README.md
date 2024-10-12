@@ -6,6 +6,8 @@ The Grocery List App is a mobile application designed to help users efficiently 
 - **Add and Manage Items**: Easily create a list of grocery items with prices.
 - **Calculate Total Costs**: Automatically calculate the total expense for the items on the list, helping users stay within their budget.
 - **User-Friendly Interface**: Navigate through a clean and intuitive design, making shopping hassle-free.
+- **History for further use**: Users can also check which items they bought with the date and time.
+- **Privacy**: Users can utilize the app without logging in. Histories are saved locally on the device, ensuring complete privacy for personal use.
 
 ## Features
 - Add, edit, and delete grocery items.
